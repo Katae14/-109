@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Day - Dessert Recipe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fffaf4;
+      color: #333;
+      padding: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      background-color: #ffb6c1;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #ff69b4;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover,
+    .navbar a.recipe {
+      background-color: #ff1493;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 2rem;
+      color: #d6336c;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .text-frame {
+      background-color: #fff0f5;
+      border: 2px solid #ffc0cb;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .text-frame h3 {
+      color: #c71585;
+      margin-bottom: 10px;
+    }
+
+    .text-frame p {
+      line-height: 1.6;
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .navbar a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="HOME.HTML">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="recipe.html" class="recipe">DESSERT RECIPE</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+
+  <h2>ส่วนผสมขนม</h2>
+
+  <div class="recipe-grid">
+    <div class="text-frame">
+      <h3>คุกกี้</h3>
+      <p>
+        - น้ำตาลทรายแดง 50 กรัม<br>
+        - เนยจืด 55 กรัม<br>
+        - ไข่ไก่ 30 กรัม<br>
+        - แป้งอเนกประสงค์ 90 กรัม
+      </p>
+    </div>
+
+    <div class="text-frame">
+      <h3>คอร์นเฟลกคาราเมล</h3>
+      <p>
+        - คอร์นเฟลก 600 กรัม<br>
+        - แอลมอนด์ 70 กรัม<br>
+        - น้ำตาล 102 กรัม
+      </p>
+    </div>
+
+    <div class="text-frame">
+      <h3>บราวนี่</h3>
+      <p>
+        - ไข่ไก่ 3 ฟอง<br>
+        - ผงโกโก้ 60 กรัม<br>
+        - น้ำตาลป่น 280 กรัม<br>
+        - เนยสด 160 กรัม
+      </p>
+    </div>
+
+    <div class="text-frame">
+      <h3>เค้กโอรีโอ้</h3>
+      <p>
+        - คุกกี้บด 150 กรัม<br>
+        - วิปปิ้งครีม 400 กรัม<br>
+        - น้ำตาลไอซิ่ง 40 กรัม
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
